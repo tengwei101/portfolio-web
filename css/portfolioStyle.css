@@ -1,0 +1,430 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    color: #222;
+    -webkit-transition: background-color 800ms ease;
+    transition: background-color 800ms ease;
+}
+
+body.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark img {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+
+/* more dark mode styles here */
+
+div{
+    padding:4.5rem 0 2.5rem;
+}
+
+.navbar-nav{
+    display: flex;
+    margin: auto;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar .light-button {
+    display: none;
+  }
+
+nav ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+}
+  
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #262626;
+    border-bottom: 2px solid #262626;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+}
+  
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+  
+nav ul li a:hover {
+    color: #fff;
+}
+  
+nav ul li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+  
+nav ul li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+div#collapse_target.collapse.navbar-collapse {
+    padding: 3px;
+}
+
+.portfolio-body {
+    background-color: rgba(241, 193, 252, 0.2);
+}
+
+.snowflakes {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000;
+    padding: 0%;
+}
+
+.layout_padding-top {
+    padding-top: 10px;
+}
+
+.portfolio-starter {
+    overflow-x: hidden;
+}
+
+.portfolio-starter .container {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.portfolio-starter .portfolio-starter-container .starter-image {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+}
+
+.portfolio-starter .container .image-container {
+    background-image: url("../Assignment image/img001_banner.jpg");
+    padding: 0px;
+}
+
+.portfolio-starter .container .image-container h2 {
+    text-align: center;
+}
+
+.portfolio-starter-container {
+    padding: 5px;
+    margin: 5px;
+}
+
+.portfolio-starter .portfolio-starter-container .starter-image img {
+    width: 100%;
+    height: 600px;
+}
+
+.portfolio-starter .portfolio-starter-container .starter-image .image-link img {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(183, 248, 255, 0.2);
+}
+
+.portfolio-starter .portfolio-starter-container .starter-image .image-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.portfolio-starter .portfolio-starter-container .starter-image .image-link a {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.portfolio-starter .portfolio-starter-container .starter-image:hover .image-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.slick-track {
+    padding-top: 10px;
+}
+
+.slick-track .starter-image {
+    padding-top: 10px;
+}
+
+.categories .container {
+    padding-top: 0px;
+}
+
+.categories .container h2 {
+    background-image: url("../Assignment image/img001_banner.jpg");
+    text-align: center;
+}
+
+.categories .container ul li.nav-item {
+    font-size: 28px;
+}
+
+.categories .container ul li.nav-item a {
+    text-align: center;
+    color: rgb(120, 91, 133);
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.categories .container ul li.nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+.categories .container ul li.nav-item a:focus {
+    background-color: rgba(195, 244, 249, 0.4);
+    color: rgb(101, 12, 12);
+}
+
+/*snowflakes*/
+@-webkit-keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes snowflakes-shake {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+
+    50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
+
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes snowflakes-shake {
+    0% {
+        transform: translateX(0px)
+    }
+
+    50% {
+        transform: translateX(80px)
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running
+}
+
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s
+}
+
+.snowflake:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s
+}
+
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s, .5s;
+    animation-delay: 6s, .5s
+}
+
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s
+}
+
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s
+}
+
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s
+}
+
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay: 6s, 2s
+}
+
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s
+}
+
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s
+}
+
+.snowflake:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s
+}
+
+/******** Footer *******/
+div#footer.footer.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+div .row.text-center {
+    margin: 0px;
+    padding: 0px;
+}
+
+div .col-12 {
+    padding: 2px;
+}
+
+.footer{
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    max-width: 100%;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+    width: 75%;
+}
+
+.footer img{
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+div.container {
+    padding: 10px;
+}
+
+div.row, .col-xs-6 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+div.card {
+    padding: 2px;
+    width: 17.8rem;
+}
+
+div.card-body {
+    background-color: rgb(157, 138, 165);
+}
+
+div.container-fluid.padding, .col-md-4 {
+    padding: 2px;
+}
+
+div.sharethis-inline-reaction-buttons {
+    padding: 0px;
+}
+
+h3#message {
+    text-align: center;
+}

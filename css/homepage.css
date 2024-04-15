@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    color: #222;
+    -webkit-transition: background-color 800ms ease;
+    transition: background-color 800ms ease;
+}
+
+body.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark img {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+
+/* more dark mode styles here */
+
+
+
+section {
+    margin-top: 4rem;
+}
+
+/*Menu Bar*/
+
+.navbar-nav {
+    display: flex;
+    margin: auto;
+    align-items: center;
+
+}
+
+.navbar .light-button {
+    display: none;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #262626;
+    border-bottom: 2px solid #262626;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav ul li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+nav ul li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+section {
+    padding: 4.5rem 0 3rem;
+}
+
+.container {
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Home*/
+.home {
+    margin-top: 5rem;
+    background: url('/Assignment image/homepage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+    border-radius: 1.5rem;
+    display: flex;
+    background-attachment: fixed;
+}
+
+.home .btn{
+    font-size: 1.2em;
+}
+
+.hone-text {
+    padding-left: 35px;
+}
+
+.home-text h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*About*/
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+    gap: 2rem;
+}
+
+.about-img img {
+    border-radius: 3rem 0 3rem 3rem;
+}
+
+.about-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #3277b5;
+}
+
+.about-text h2 {
+    font-size: 1.7rem;
+}
+
+.about-text p {
+    font-size: 0.938rem;
+    margin: 1rem 0 1rem;
+}
+
+
+/*Portfolio*/
+.portfolio {
+    background: url('/Assignment image/portfolio(Backgound).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    position: absolute;
+    align-items: center;
+    max-width: 450px;
+
+}
+
+.carousel h3 {
+    color: aliceblue;
+}
+
+/*Team*/
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    position: relative;
+}
+
+.team .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.team .container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.005);
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .container .card:hover{
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+}
+
+
+.team .container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.team .container .card:hover .content {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.team .container .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.team .container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team .container .card .content .contentBx h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.team .container .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.team .container .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+
+.team .container .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(30px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.team .container .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.team .container .card .sci li a {
+    color: #3277b5;
+    font-size: 24px;
+}
+/******/
+
+/*location*/
+.my-form {
+    color: #5b626c;
+}
+
+.my-form.dark {
+    color: #6f8cb7;
+}
+
+.my-form .btn-default {
+    background-color: #305896;
+    color: #fff;
+    border-radius: 0;
+}
+
+.my-form .btn-default:hover {
+    background-color: #4498C6;
+    color: #fff;
+}
+
+.my-form .form-control {
+    border-radius: 0;
+}
+
+#map {
+    height: 100%;
+}
+
+/******** Footer *******/
+.footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    max-width: 100%;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+    width: 75%;
+}
+
+.footer img {
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .my-form{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>WINK UTAR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+                   
+        <!-- Favicon -->
+        <link href="img/wink.ico" rel="shortcut icon"/>
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    
+        <!-- Main Stylesheets -->
+        <link rel="stylesheet" href="css/gallery.css"/>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Gallery-->
+        <script src="js/gallery.js"></script>
+
+        <!-- jQuery -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+        <!--Filter-->
+        <script src="js/filter.js"></script>
+
+        <!--Location (Get and Store Longitude and Latitude in Local Storage) -->
+        <script src="js/main.js"></script>
+
+
+    </head>
+
+
+    <body>
+
+        <!---------Menu Bar--------->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="homepage.html">
+          <img src="Assignment image/logo (2).png" alt="WINK UTAR LOGO" height="100px">
+      </a>
+
+      <!-- <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="darkSwitch">
+          <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+      </div> -->
+
+      <button class="btn btn-dark dark-button">Dark Mode</button>
+      <button class="btn btn-secondary light-button">Light Mode</button>
+
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapse_target">
+
+          <ul class="navbar-nav">
+              <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                      data-target="dropdown_target" href="">Dropdown <span class="caret"></span></a></li>
+              <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                  <a class="dropdown-item" href="">PHP Videos</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="">PHP Videos</a>
+                  <a class="dropdown-item" href="">PHP Videos</a>
+                  <a class="dropdown-item" href="">PHP Videos</a>
+
+              </div> -->
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+
+        <h2>PORTFOLIO</h2>
+       <body>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/4d21101d98/malaysia/" data-label_1="MALAYSIA" data-label_2="WEATHER" data-font="Times New Roman" data-theme="orange" >MALAYSIA WEATHER</a>
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn btn-primary" onclick="filterSelection('fashion')"> Fashion</button>
+          <button class="btn btn-primary" onclick="filterSelection('cars')"> Cars</button>
+        </div>
+      
+        
+        <!-- Portfolio Gallery Grid -->
+        <section>
+          <div class="rt-container">
+                <div class="col-rt-12">
+                    <div class="Scriptcontent">
+        <section>
+          <div class="column fashion">
+          <div class="gallery">
+              <div class="gallery-item item-3x4">
+                  <img class="thumb placeholder" src="img/fashion/fashion1.jpg" data-src="img/fashion/fashion1.jpg" data-image="img/fashion/fashion1.jpg" data-title="Fashion 1" alt="Fashion 1">
+                  <div class="caption"><span>Caption 1<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPgqA97vUYg74HauOzWpvI2PktEkX1AFMX3R1sq?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPgqA97vUYg74HauOzWpvI2PktEkX1AFMX3R1sq?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPgqA97vUYg74HauOzWpvI2PktEkX1AFMX3R1sq?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+              </div>
+      
+              <div class="gallery-item item-3x4">
+                <img class="thumb placeholder" src="img/fashion/fashion2.jpg" data-src="img/fashion/fashion2.jpg" data-image="img/fashion/fashion2.jpg" data-title="Fashion 2" alt="Fashion 2">
+                <div class="caption"><span>Caption 2<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipNif-o6K2A9FySauxIAGsZQ1-juje6ywyF_wopo?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipNif-o6K2A9FySauxIAGsZQ1-juje6ywyF_wopo?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipNif-o6K2A9FySauxIAGsZQ1-juje6ywyF_wopo?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+              </div>
+      
+              <div class="gallery-item item-3x4">
+                <img class="thumb placeholder" src="img/fashion/fashion3.jpg" data-src="img/fashion/fashion3.jpg" data-image="img/fashion/fashion3.jpg" data-title="Fashion 3" alt="Fashion 3">
+              <div class="caption"><span>Caption 3<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPVfhqEtoc-WL13Xvx-iEseuwrGI47Ju9O6ZqAZ?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPVfhqEtoc-WL13Xvx-iEseuwrGI47Ju9O6ZqAZ?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPVfhqEtoc-WL13Xvx-iEseuwrGI47Ju9O6ZqAZ?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+              </div>
+            </div>
+      </section>        
+
+      <section>
+        <div class="column fashion">
+        <div class="gallery">
+            <div class="gallery-item item-2x3">
+              <img class="thumb placeholder" src="img/fashion/fashion4.jpg" data-src="img/fashion/fashion4.jpg" data-image="img/fashion/fashion4.jpg" data-title="Fashion 4" alt="Fashion 4">
+              <div class="caption"><span>Caption 4<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMm7jUSBwApzdBZAiFGjOPlf00K5d0vTLd0lwYh?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMm7jUSBwApzdBZAiFGjOPlf00K5d0vTLd0lwYh?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMm7jUSBwApzdBZAiFGjOPlf00K5d0vTLd0lwYh?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+            </div>
+    
+            <div class="gallery-item item-2x3">
+              <img class="thumb placeholder" src="img/fashion/fashion5.jpg" data-src="img/fashion/fashion5.jpg" data-image="img/fashion/fashion5.jpg" data-title="Fashion 5" alt="Fashion 5">
+              <div class="caption"><span>Caption 5<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipO8peZdCIkYVfRx6hP4CNSrkfFNODxV76668hgB?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipO8peZdCIkYVfRx6hP4CNSrkfFNODxV76668hgB?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipO8peZdCIkYVfRx6hP4CNSrkfFNODxV76668hgB?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+            </div>
+    
+            <div class="gallery-item item-4x3">
+              <img class="thumb placeholder" src="img/fashion/fashion6.jpg" data-src="img/fashion/fashion6.jpg" data-image="img/fashion/fashion6.jpg" data-title="Fashion 6" alt="Fashion 6">
+              <div class="caption"><span>Caption 6<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+            </div>
+
+            <div class="gallery-item item-4x3">
+              <img class="thumb placeholder" src="img/fashion/fashion7.jpg" data-src="img/fashion/fashion7.jpg" data-image="img/fashion/fashion7.jpg" data-title="Fashion 7" alt="Fashion 7">
+              <div class="caption"><span>Caption 7<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMmznxDzTy8f3dwXEiZg0iX1Kf69nZpxMK0CXja?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMmznxDzTy8f3dwXEiZg0iX1Kf69nZpxMK0CXja?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMmznxDzTy8f3dwXEiZg0iX1Kf69nZpxMK0CXja?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+            </div>
+          </div>
+      </section>   
+
+      <section>
+        <div class="column fashion">
+        <div class="gallery">
+            <div class="gallery-item item-1x1">
+              <img class="thumb placeholder" src="img/fashion/fashion8.jpg" data-src="img/fashion/fashion8.jpg" data-image="img/fashion/fashion8.jpg" data-title="Fashion 8" alt="Fashion 8">
+              <div class="caption"><span>Caption 8<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+            </div>
+            
+            <div class="gallery-item item-1x1">
+              <img class="thumb placeholder" src="img/fashion/fashion9.jpg" data-src="img/fashion/fashion9.jpg" data-image="img/fashion/fashion9.jpg" data-title="Fashion 9" alt="Fashion 9">
+              <div class="caption"><span>Caption 9<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+            </div>
+
+            <div class="gallery-item item-2x3">
+              <img class="thumb placeholder" src="img/fashion/fashion10.jpg" data-src="img/fashion/fashion10.jpg" data-image="img/fashion/fashion10.jpg" data-title="Fashion 10" alt="Fashion 10">
+              <div class="caption"><span>Caption 10<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+            </div>
+      </section> 
+
+      <section>
+        <div class="column fashion">
+        <div class="gallery">
+            <div class="gallery-item item-8x5">
+              <img class="thumb placeholder" src="img/fashion/fashion11.jpg" data-src="img/fashion/fashion11.jpg" data-image="img/fashion/fashion11.jpg" data-title="Fashion 11" alt="Fashion 11">
+              <div class="caption"><span>Caption 11<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+            </div>
+            
+            <div class="gallery-item item-8x5">
+              <img class="thumb placeholder" src="img/fashion/fashion12.jpg" data-src="img/fashion/fashion12.jpg" data-image="img/fashion/fashion12.jpg" data-title="Fashion 12" alt="Fashion 12">
+              <div class="caption"><span>Caption 12<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+            </div>
+
+            <div class="gallery-item item-1x1">
+              <img class="thumb placeholder" src="img/fashion/fashion13.jpg" data-src="img/fashion/fashion13.jpg" data-image="img/fashion/fashion13.jpg" data-title="Fashion 13" alt="Fashion 13">
+              <div class="caption"><span>Caption 13<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+            </div>
+
+            <div class="gallery-item item-3x4">
+              <img class="thumb placeholder" src="img/fashion/fashion14.jpg" data-src="img/fashion/fashion14.jpg" data-image="img/fashion/fashion14.jpg" data-title="Fashion 14" alt="Fashion 14">
+              <div class="caption"><span>Caption 14<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipPvjM3CZ8sexaUI8VIGl2aOxn7OejG6bBBSkosP?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+            </div> 
+         </section>
+
+         <section>
+          <div class="column fashion">
+          <div class="gallery">
+              <div class="gallery-item item-1x1">
+                <img class="thumb placeholder" src="img/fashion/fashion15.jpeg" data-src="img/fashion/fashion15.jpeg" data-image="img/fashion/fashion15.jpeg" data-title="Fashion 15" alt="Fashion 15">
+                <div class="caption"><span>Caption 15<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipM-IHzJZ7heF3m5lmkr6pE0dMdWseDHC_57EPJX?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipM-IHzJZ7heF3m5lmkr6pE0dMdWseDHC_57EPJX?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipM-IHzJZ7heF3m5lmkr6pE0dMdWseDHC_57EPJX?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+              </div>
+  
+              <div class="gallery-item item-2x3">
+                <img class="thumb placeholder" src="img/fashion/fashion16.jpg" data-src="img/fashion/fashion16.jpg" data-image="img/fashion/fashion16.jpg" data-title="Fashion 16" alt="Fashion 16">
+                <div class="caption"><span>Caption 16<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipODFn5wVSJ9mPr4MKuQ87w6iyfiZrZ2OCk8P1Hd?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipODFn5wVSJ9mPr4MKuQ87w6iyfiZrZ2OCk8P1Hd?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipODFn5wVSJ9mPr4MKuQ87w6iyfiZrZ2OCk8P1Hd?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+              </div>
+              </div>
+          </section>  
+
+          <section>
+            <div class="column cars">
+            <div class="gallery">
+                <div class="gallery-item item-2x3">
+                  <img class="thumb placeholder" src="img/cars/car1.jpg" data-src="img/cars/car1.jpg" data-image="img/cars/car1.jpg" data-title="Car 1" alt="Car 1">
+                  <div class="caption"><span>Car 1<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOUJDPt-FX9cCZzdd1rgmP-FoNxFujJMPKtzX_7?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOUJDPt-FX9cCZzdd1rgmP-FoNxFujJMPKtzX_7?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOUJDPt-FX9cCZzdd1rgmP-FoNxFujJMPKtzX_7?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+                </div>
+    
+                <div class="gallery-item item-2x3">
+                  <img class="thumb placeholder" src="img/cars/car2.jpg" data-src="img/cars/car2.jpg" data-image="img/cars/car2.jpg" data-title="Car 2" alt="Car 2">
+                  <div class="caption"><span>Car 2<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMC-01mIkzP1E96aEh2N4Tq7latupjZSanQzstI?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photoshttps://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMC-01mIkzP1E96aEh2N4Tq7latupjZSanQzstI?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photoshttps://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMC-01mIkzP1E96aEh2N4Tq7latupjZSanQzstI?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+                </div>
+                </div>
+              </section>
+                
+              <section>
+                <div class="column cars">
+                <div class="gallery">
+                <div class="gallery-item item-2x3">
+                  <img class="thumb placeholder" src="img/cars/car3.jpg" data-src="img/cars/car3.jpg" data-image="img/cars/car3.jpg" data-title="Car 3" alt="Car 3">
+                  <div class="caption"><span>Car 3<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipNTYTROioiJ05neov8ojB8olfMZfAxDrZrRTlKZ?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipNTYTROioiJ05neov8ojB8olfMZfAxDrZrRTlKZ?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipNTYTROioiJ05neov8ojB8olfMZfAxDrZrRTlKZ?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+                </div>
+
+                <div class="gallery-item item-2x3">
+                  <img class="thumb placeholder" src="img/cars/car4.jpg" data-src="img/cars/car4.jpg" data-image="img/cars/car4.jpg" data-title="Car 4" alt="Car 4">
+                  <div class="caption"><span>Car 4<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOYPacN6HMQT4y9xxuOZmnj5MS_fRiZ4g-gQE5u?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOYPacN6HMQT4y9xxuOZmnj5MS_fRiZ4g-gQE5u?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOYPacN6HMQT4y9xxuOZmnj5MS_fRiZ4g-gQE5u?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+                </div>
+
+                <div class="gallery-item item-2x3">
+                  <img class="thumb placeholder" src="img/cars/car5.jpg" data-src="img/cars/car5.jpg" data-image="img/cars/car5.jpg" data-title="Car 5" alt="Car 5">
+                  <div class="caption"><span>Car 5<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMUgJ5gp-BHaOECYLDYVPcrlVEHvedJOJuPq2JH?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMUgJ5gp-BHaOECYLDYVPcrlVEHvedJOJuPq2JH?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMUgJ5gp-BHaOECYLDYVPcrlVEHvedJOJuPq2JH?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+                </div>
+
+                <div class="gallery-item item-2x3">
+                  <img class="thumb placeholder" src="img/cars/car6.jpg" data-src="img/cars/car6.jpg" data-image="img/cars/car6.jpg" data-title="Car 6" alt="Car 6">
+                  <div class="caption"><span>Car 6<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMiiU34S-Ww7VGxiOdqwdtiwnfmNVkdrOKRwNsR?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMiiU34S-Ww7VGxiOdqwdtiwnfmNVkdrOKRwNsR?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMiiU34S-Ww7VGxiOdqwdtiwnfmNVkdrOKRwNsR?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+                </div>
+                </div>
+              </section>
+
+              <section>
+                <div class="column cars">
+                <div class="gallery">
+                <div class="gallery-item item-2x3">
+                  <img class="thumb placeholder" src="img/cars/car3.jpg" data-src="img/cars/car7.jpg" data-image="img/cars/car7.jpg" data-title="Car 7" alt="Car 7">
+                  <div class="caption"><span>Car 7<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMvZCKIeUm-0IupT5HF9RQJKYroKmWwO1nwmete?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMvZCKIeUm-0IupT5HF9RQJKYroKmWwO1nwmete?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipMvZCKIeUm-0IupT5HF9RQJKYroKmWwO1nwmete?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+                </div>
+
+                <div class="gallery-item item-2x3">
+                  <img class="thumb placeholder" src="img/cars/car8.jpg" data-src="img/cars/car8.jpg" data-image="img/cars/car8.jpg" data-title="Car 8" alt="Car 8">
+                  <div class="caption"><span>Car 8<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOrIig37cJwQGyvIz6Ij_5TJtI_IV9H_EjGLssZ?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOrIig37cJwQGyvIz6Ij_5TJtI_IV9H_EjGLssZ?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOrIig37cJwQGyvIz6Ij_5TJtI_IV9H_EjGLssZ?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+                </div>
+
+                <div class="gallery-item item-2x3">
+                  <img class="thumb placeholder" src="img/cars/car9.jpg" data-src="img/cars/car9.jpg" data-image="img/cars/car9.jpg" data-title="Car 9" alt="Car 9">
+                  <div class="caption"><span>Car 9<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipO1QLNiQa1RBKZlDQ0hL7xbkoT0mHnvtryBU6fc?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipO1QLNiQa1RBKZlDQ0hL7xbkoT0mHnvtryBU6fc?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipO1QLNiQa1RBKZlDQ0hL7xbkoT0mHnvtryBU6fc?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+                </div>
+                </div>
+              </section>
+
+              <section>
+                <div class="column cars">
+                <div class="gallery">
+                <div class="gallery-item item-2x3">
+                  <img class="thumb placeholder" src="img/cars/car10.jpg" data-src="img/cars/car10.jpg" data-image="img/cars/car10.jpg" data-title="Car 10" alt="Car 10">
+                  <div class="caption"><span>Car 10<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOXHg_e56_XXlLmz5gLjW2misfN_bLNqbdm6eww?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?url=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOXHg_e56_XXlLmz5gLjW2misfN_bLNqbdm6eww?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sharer.php?u=https://photos.google.com/share/AF1QipNLTsrAWkxSPOnm57DkvfCAFrUNptEkkkpExaqKMETYAf1tXMwa6VvWd4Bh82SVVQ/photo/AF1QipOXHg_e56_XXlLmz5gLjW2misfN_bLNqbdm6eww?key=SVFfSWI3MjZaaVZwaktCNVJoai1zSXQ5eENPMWhB" class="fa fa-instagram"></a></span></div>
+                </div>
+                </div>
+              </section>
+
+                </div>
+            </section>  
+    
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+
+  <!--Footer-->
+  <div class="footer container" id="footer">
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img class="img-fluid" src="Assignment image/winkUtar Text.png" alt="">
+                <center>
+                    <hr class="light">
+                </center>
+                <p>03-8884522</p>
+                <p>winkUtar@1utar.my</p>
+                <p>
+                    Jalan Universiti,
+                    Bandar Barat
+                </p>
+                <p>Kampar, Perak, 31900</p>
+            </div>
+            <div class="col-md-4">
+                <center>
+                    <hr class="light">
+                </center>
+                <h5>Our Hours</h5>
+                <center>
+                    <hr class="light">
+                </center>
+                <p>Monday: 9am - 5pm</p>
+                <p>Tuesday: 9am - 5pm</p>
+                <p>Wednesday: 9am - 5pm</p>
+                <p>Thurday: Closed</p>
+                <p>Friday: 9am - 5pm</p>
+                <p>Saturday: Closed</p>
+                <p>Sunday: Closed</p>
+            </div>
+
+            <div class="col-md-4">
+                <center>
+                    <hr class="light">
+                </center>
+                <h5>Service Area</h5>
+                <center>
+                    <hr class="light">
+                </center>
+                <p>George Town, Penang, 10350</p>
+                <p>Muar, Johor, 84400</p>
+                <p>Ipoh, Perak, 34650</p>
+                <p>Cheras, Selangor, 43200</p>
+            </div>
+            <div class="col-12">
+                <center>
+                    <hr class="light">
+                </center>
+                <h5>&copy; winkUtar.com</h5>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+  <script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+  if(!d.getElementById(id)){
+  js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+  fjs.parentNode.insertBefore(js,fjs);
+  }}
+  (document,'script','weatherwidget-io-js');
+  </script>
+
+  <script>
+    //    <!---------DarkMode Script--------->
+    var darkMode;
+
+    if (localStorage.getItem('dark-mode')) {
+      // if dark mode is in storage, set variable with that value
+      darkMode = localStorage.getItem('dark-mode');
+    } else {
+      // if dark mode is not in storage, set variable to 'light'
+      darkMode = 'light';
+    }
+
+    // set new localStorage value
+    localStorage.setItem('dark-mode', darkMode);
+
+
+    if (localStorage.getItem('dark-mode') == 'dark') {
+      // if the above is 'dark' then apply .dark to the body
+      $('body').addClass('dark');
+
+      // hide the 'dark' button
+      $('.dark-button').hide();
+      // show the 'light' button
+      $('.light-button').show();
+    }
+
+    $('.dark-button').on('click', function () {
+      $('.dark-button').hide();
+      $('.light-button').show();
+      $('body').addClass('dark');
+
+      // set stored value to 'dark'
+      localStorage.setItem('dark-mode', 'dark');
+    });
+
+    $('.light-button').on('click', function () {
+      $('.light-button').hide();
+      $('.dark-button').show();
+      $('body').removeClass('dark');
+
+      // set stored value to 'light'
+      localStorage.setItem('dark-mode', 'light');
+    });
+
+
+
+  </script>
+
+</body>
+
+</html>
